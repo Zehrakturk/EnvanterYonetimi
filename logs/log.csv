@@ -115,3 +115,5 @@ error_id,timestamp,user_id,action,product_name,error_message
 2025-01-04 14:05:23,admin,0,success_admin,10.0.2.15
 2025-01-04 14:06:02,SYSTEM,BACKUP,SUCCESS,Files backed up to /home/btu59049/envanter_yonetimi/backups/backup_20250104_140558.tar.gz
 2025-01-04 14:08:53,admin,0,success_admin,10.0.2.15
+2025-01-04 17:49:08,admin,0,success_admin,10.0.2.15
+2025-01-04 17:54:08,admin,0,success_admin,10.0.2.15

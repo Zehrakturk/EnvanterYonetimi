@@ -1,0 +1,15 @@
+=== STOĞU 50'NİN ALTINDA OLAN ÜRÜNLER ===
+Tarih: 2025-01-04 17:54:55
+----------------------------------------
+Ürün ID: 41
+Ürün Adı: Game Console
+Kategori: 264.69
+Stok Miktarı: 7
+Birim Fiyat: 0,00 TL
+----------------------------------------
+Ürün ID: 50
+Ürün Adı: Watch
+Kategori: 207.21
+Stok Miktarı: 28
+Birim Fiyat: 0,00 TL
+----------------------------------------

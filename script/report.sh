@@ -20,7 +20,7 @@ generate_category_stock_graph() {
     local graph_file="$report_dir/category_stock.png"
     
     # Kategori bazlı stok verisi
-    echo "Kategori bazlı stok verisi oluşturuluyor..."
+    echo "Category-based stock data is created..."
     awk -F, '
     NR>1 {
         stock[$5] += $3
@@ -33,11 +33,11 @@ generate_category_stock_graph() {
     ' "$CSV_FILE" > "$data_file"
 
     if [ $? -ne 0 ]; then
-        echo "Hata: Kategori bazlı stok verisi oluşturulamadı."
+        echo "Error: Category-based stock data could not be created."
         return 1
     fi
     
-    echo "Kategori bazlı grafik oluşturuluyor..."
+   
     gnuplot <<EOF
     set terminal png size 800,600
     set output '$graph_file'
@@ -51,17 +51,17 @@ generate_category_stock_graph() {
 EOF
 
     if [ $? -ne 0 ]; then
-        echo "Hata: Grafik oluşturulamadı."
+        echo "Error: Could not create chart"
         return 1
     fi
 
     # Grafik dosyasının oluşturulduğuna dair bilgi mesajı
     if [ -f "$graph_file" ]; then
-        echo "Grafik başarıyla oluşturuldu: $graph_file"
+        echo "Chart created successfully: $graph_file"
         # PNG dosyasını xdg-open ile aç
         xdg-open "$graph_file"
     else
-        echo "Hata: Grafik dosyası oluşturulamadı."
+        echo "Error: Could not create graphic file."
     fi
 }
 
@@ -71,7 +71,7 @@ generate_stock_value_graph() {
     local graph_file="$report_dir/stock_value.png"
     
     # Yüksek stok değerleri
-    echo "Stok değeri verisi oluşturuluyor..."
+    echo "Stock value data is being created..."
     awk -F, '
     NR>1 {
         stock_value = $3 * $4
@@ -80,11 +80,11 @@ generate_stock_value_graph() {
     ' "$CSV_FILE" | sort -k2,2nr | head -n 10 > "$data_file"
 
     if [ $? -ne 0 ]; then
-        echo "Hata: Stok değeri verisi oluşturulamadı."
+        echo "Error: Failed to create stock value data."
         return 1
     fi
     
-    echo "Stok değeri grafiği oluşturuluyor..."
+    
     gnuplot <<EOF
     set terminal png size 800,600
     set output '$graph_file'
@@ -98,18 +98,18 @@ generate_stock_value_graph() {
 EOF
 
     if [ $? -ne 0 ]; then
-        echo "Hata: Grafik oluşturulamadı."
+        echo "Error: Could not create chart."
         return 1
     fi
 
     # Grafik dosyasının oluşturulduğuna dair bilgi mesajı
     if [ -f "$graph_file" ]; then
-        echo "Grafik başarıyla oluşturuldu: $graph_file"
+        echo "Chart created successfully: $graph_file"
         zenity --info --text="En Yüksek Stok Değeri Grafiği" --title="Grafik" --image="$graph_file"
           # PNG dosyasını xdg-open ile aç
         xdg-open "$graph_file"
     else
-        echo "Hata: Grafik dosyası oluşturulamadı."
+        echo "Error: Graphics file could not be created."
     fi
 }
 
@@ -118,7 +118,7 @@ list_low_stock_products() {
     local report_file="$report_dir/low_stock_report.txt"
     local product_list=""
     
-    echo "=== STOĞU 50'NİN ALTINDA OLAN ÜRÜNLER ===" > "$report_file"
+    echo "=== PRODUCTS WITH STOCK BELOW 50 ===" > "$report_file"
     echo "Tarih: $(date "+%Y-%m-%d %H:%M:%S")" >> "$report_file"
     echo "----------------------------------------" >> "$report_file"
     
@@ -138,11 +138,11 @@ list_low_stock_products() {
 
 # Menü ekranı (Zenity ile GUI menüsü)
 show_menu() {
-    choice=$(zenity --list --title="Stok Raporları Menü" --column="Seçim" \
+    choice=$(zenity --list --title="Report Menu" --column="Choice" \
                     "Kategori Bazlı Rapor" \
                     "Yüksek Stok Değeri Raporu" \
                     "Stoğu 50'nin Altında Olan Ürünler" \
-                    "Çıkış")
+                    "Exit")
     echo $choice
 }
 
@@ -153,7 +153,7 @@ main() {
 
         case $choice in
             "Kategori Bazlı Rapor")
-                echo "Kategori Bazlı Rapor Seçildi."
+                
                 report_dir=$(create_report_directory)
                 
                 # Grafik oluştur

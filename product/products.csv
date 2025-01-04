@@ -1,6 +1,52 @@
 ID,Ürün Adı,Stok Miktarı,Birim Fiyatı,Kategori,Satılma Adedi
-1,Defter,50,12.0,Kırtasiye,30
-3,halı,600,1,Home,695
-4,Dalin,12,34,Other,589
-5,elma,34,3,Other,329
-6,hesapmakinesi,, 34.23,56,Electronics,2025-01-04 11:45:47,2025-01-04 11:45:47
+1,Keyboard,946,146.24,Stationery,647
+2,Stapler,600,269.8,Other,756
+3,Microwave,238,149.36,Grocery,987
+4,Game Console,363,420.44,Beauty,534
+5,Watch,999,301.61,Electronics,524
+6,Lamp,355,375.19,Electronics,835
+7,Blender,119,154.68,Electronics,19
+8,Camera,894,208.93,Beauty,854
+9,Bed,617,294.66,Stationery,384
+10,Fridge,91,274.26,Books,457
+11,Ruler,933,114.89,Sports,468
+12,Football,947,284.51,Toys,548
+13,Socks,523,4.83,Books,578
+14,Socks,151,466.64,Sports,598
+15,Soap,688,289.5,Toys,39
+16,Bicycle,103,252.69,Electronics,338
+17,Mug,902,130.2,Home,732
+18,T-Shirt,559,350.62,Grocery,34
+19,Skateboard,322,57.41,Books,259
+20,Table,252,312.17,Books,867
+21,Shampoo,670,487.82,Home,217
+22,Monitor,117,323.84,Electronics,467
+23,Ruler,760,9.79,Clothing,920
+24,Guitar,408,97.72,Beauty,60
+25,Coffee Maker,541,470.63,Books,307
+26,Monitor,784,379.15,Stationery,903
+27,Drum,634,444.53,Clothing,900
+28,Laptop,641,222.35,Home,199
+29,Notebook,964,152.73,Stationery,364
+30,Eraser,177,57.52,Beauty,857
+31,Coffee Maker,260,74.12,Beauty,846
+32,Rice,197,478.08,Grocery,704
+33,Eraser,177,455.29,Grocery,887
+34,Game Console,934,181.46,Beauty,74
+35,Perfume,885,108.23,Home,371
+36,Table,156,87.55,Books,929
+37,Sandwich Maker,187,116.37,Beauty,987
+38,Camera,578,449.84,Other,748
+39,Notebook,943,490.26,Beauty,654
+40,Fan,168,498.82,Home,469
+41,Game Console,7,264.69,Other,592
+42,Game Console,570,356.28,Stationery,737
+43,Mouse,163,331.86,Other,688
+44,Drum,213,294.13,Books,97
+45,Pencil,822,445.42,Home,586
+46,Basketball,587,216.43,Home,820
+47,Milk,169,128.04,Grocery,586
+48,Table,334,197.35,Beauty,306
+49,Mouse,879,421.71,Beauty,322
+50,Watch,28,207.21,Stationery,618
+
