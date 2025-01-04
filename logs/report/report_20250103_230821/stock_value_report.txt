@@ -1,0 +1,38 @@
+=== YÜKSEK STOK DEĞERİ RAPORU (Limit: 50 TL) ===
+Tarih: 2025-01-03 23:08:21
+----------------------------------------
+Ürün ID: 2
+Ürün Adı: Defter
+Stok Miktarı: 50
+Birim Fiyat: 12.0 TL
+Kategori: Kırtasiye
+Stok Değeri: 600 TL
+----------------------------------------
+Ürün ID: 4
+Ürün Adı: bardak
+Stok Miktarı: 45.56
+Birim Fiyat: 45 TL
+Kategori: Home
+Stok Değeri: 2025 TL
+----------------------------------------
+Ürün ID: 4
+Ürün Adı: halı
+Stok Miktarı: 600
+Birim Fiyat: 1 TL
+Kategori: Home
+Stok Değeri: 600 TL
+----------------------------------------
+Ürün ID: 5
+Ürün Adı: Dalin
+Stok Miktarı: 12
+Birim Fiyat: 34 TL
+Kategori: Other
+Stok Değeri: 408 TL
+----------------------------------------
+Ürün ID: 5
+Ürün Adı: elma
+Stok Miktarı: 34
+Birim Fiyat: 3 TL
+Kategori: Other
+Stok Değeri: 102 TL
+----------------------------------------

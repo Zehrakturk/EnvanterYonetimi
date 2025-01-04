@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Satış ve Stok Raporu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8 text-center">Satış ve Stok Raporu</h1>
+        
+        <!-- Grafikler -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-xl font-semibold mb-4">Kategori Bazında Toplam Satışlar</h2>
+                <canvas id="categoryChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Kategori bazında satışlar grafiği
+        const categoryData = [{"category": "Kırtasiye", "total": 30},{"category": "Other", "total": 918},{"category": "Home", "total": 745}];
+        new Chart(document.getElementById('categoryChart'), {
+            type: 'bar',
+            data: {
+                labels: categoryData.map(d => d.category),
+                datasets: [{
+                    label: 'Toplam Satış',
+                    data: categoryData.map(d => d.total),
+                    backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Toplam Satış Adedi'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Kategoriler'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

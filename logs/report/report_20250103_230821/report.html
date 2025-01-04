@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Raporu</title>
+    <style>
+        /* ... (önceki CSS stilleri aynı kalacak) ... */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>E-Ticaret Stok Raporu</h1>
+        <p><strong>Oluşturulma Tarihi:</strong> 2025-01-03 23:08:21</p>
+
+        <div class="report-section">
+            <h2>Kategori Bazlı Stok Dağılımı</h2>
+            <div class="graph">
+                <img src="category_stock.png" alt="Kategori Stok Grafiği">
+            </div>
+            <pre>=== KATEGORİ BAZLI STOK RAPORU ===
+Tarih: 2025-01-03 23:08:21
+----------------------------------------
+Kategori: Kırtasiye
+Toplam Ürün: 1
+Toplam Stok: 50 birim
+Toplam Değer: 600,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------
+Kategori: Other
+Toplam Ürün: 2
+Toplam Stok: 46 birim
+Toplam Değer: 510,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------
+Kategori: Home
+Toplam Ürün: 2
+Toplam Stok: 645 birim
+Toplam Değer: 2625,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------</pre>
+        </div>
+
+        <div class="report-section">
+            <h2>Stok Değeri Analizi</h2>
+            <pre>=== YÜKSEK STOK DEĞERİ RAPORU (Limit: 50 TL) ===
+Tarih: 2025-01-03 23:08:21
+----------------------------------------
+Ürün ID: 2
+Ürün Adı: Defter
+Stok Miktarı: 50
+Birim Fiyat: 12.0 TL
+Kategori: Kırtasiye
+Stok Değeri: 600 TL
+----------------------------------------
+Ürün ID: 4
+Ürün Adı: bardak
+Stok Miktarı: 45.56
+Birim Fiyat: 45 TL
+Kategori: Home
+Stok Değeri: 2025 TL
+----------------------------------------
+Ürün ID: 4
+Ürün Adı: halı
+Stok Miktarı: 600
+Birim Fiyat: 1 TL
+Kategori: Home
+Stok Değeri: 600 TL
+----------------------------------------
+Ürün ID: 5
+Ürün Adı: Dalin
+Stok Miktarı: 12
+Birim Fiyat: 34 TL
+Kategori: Other
+Stok Değeri: 408 TL
+----------------------------------------
+Ürün ID: 5
+Ürün Adı: elma
+Stok Miktarı: 34
+Birim Fiyat: 3 TL
+Kategori: Other
+Stok Değeri: 102 TL
+----------------------------------------</pre>
+        </div>
+
+        <div class="report-section">
+            <h2>En Çok Satılan Ürünler</h2>
+            <div class="graph">
+                <img src="top_sold_products.png" alt="En Çok Satılan Ürünler">
+            </div>
+            <pre>=== EN ÇOK SATILAN ÜRÜNLER RAPORU ===
+Tarih: 2025-01-03 23:08:21
+----------------------------------------
+Ürün: halı
+Satış Adedi: 
+----------------------------------------
+Ürün: elma
+Satış Adedi: 
+----------------------------------------
+Ürün: Defter
+Satış Adedi: 
+----------------------------------------
+Ürün: Dalin
+Satış Adedi: 
+----------------------------------------
+Ürün: bardak
+Satış Adedi: 
+----------------------------------------</pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>Bu rapor, e-ticaret stok verilerinizin görsel analizini sunar.</p>
+    </footer>
+</body>
+</html>
+
+	# Raporu aç
+    xdg-open "/home/btu59049/envanter_yonetimi/logs/report/report_20250103_230821/report.html" 2>/dev/null || echo "HTML raporu: /home/btu59049/envanter_yonetimi/logs/report/report_20250103_230821/report.html"

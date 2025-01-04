@@ -1,0 +1,21 @@
+=== KATEGORİ BAZLI STOK RAPORU ===
+Tarih: 2025-01-03 23:08:21
+----------------------------------------
+Kategori: Kırtasiye
+Toplam Ürün: 1
+Toplam Stok: 50 birim
+Toplam Değer: 600,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------
+Kategori: Other
+Toplam Ürün: 2
+Toplam Stok: 46 birim
+Toplam Değer: 510,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------
+Kategori: Home
+Toplam Ürün: 2
+Toplam Stok: 645 birim
+Toplam Değer: 2625,00 TL
+Düşük Stoklu Ürün: 0
+----------------------------------------
