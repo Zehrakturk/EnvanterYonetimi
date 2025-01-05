@@ -9,8 +9,7 @@ Bu proje, e-ticaret platformları için kullanılabilecek kapsamlı bir envanter
 - 👥 Kullanıcı Yönetimi
 - 📊 Detaylı Raporlama Sistemi
 - 🔄 Program Yönetimi
-
-## Başlangıç
+- 🎥 Proje kullanımını anlatan video [▶𝚈𝚘𝚞𝚝𝚞𝚋𝚎](https://youtu.be/XhOqW-PPLNo)
 
 ### Ön Koşullar
 
@@ -42,31 +41,52 @@ chmod +x login.sh
    - Normal kullanıcı veya yönetici olarak giriş yapabilirsiniz
    - 3 başarısız deneme sonrası hesabınız 1 saat süreyle bloke edilir
 
+     ![Ekran görüntüsü 2025-01-05 122625](https://github.com/user-attachments/assets/984f6ee3-fbac-4d66-9b07-d0f287888adf)
+
+
 ### Yönetici Menüsü
 
 Yönetici girişi yapıldığında aşağıdaki menülere erişim sağlanır:
+   - ![image](https://github.com/user-attachments/assets/e81fb214-71c4-4100-9a2d-8cad2694c3d6)
 
 1. **Ürün İşlemleri**
    - Ürün Ekleme
    - Ürün Silme
    - Ürün Güncelleme
    - Ürün Listeleme
+   - ![Ekran görüntüsü 2025-01-05 124220](https://github.com/user-attachments/assets/4b59c916-46ca-47fd-8eeb-49f8cc6bdfa6)
+
 
 2. **Program Yönetimi**
    - Sistem Ayarları
    - Yedekleme İşlemleri
+   - ![Ekran görüntüsü 2025-01-05 124406](https://github.com/user-attachments/assets/635eabd1-db5e-493f-b524-9f2a88584f69)
+
 
 3. **Kullanıcı İşlemleri**
    - Kullanıcı Ekleme
    - Kullanıcı Silme
    - Kullanıcı Düzenleme
    - Kullanıcı Listeleme
+   - ![Ekran görüntüsü 2025-01-05 124700](https://github.com/user-attachments/assets/b39c378c-e6dc-4377-b977-e7fcca9577db)
+
 
 4. **Program Raporu**
    - Stok Durum Raporu
    - Kategori Bazlı Raporlar
    - Satış Raporları
+
    
+### Kullanıcı Menüsü
+
+Kullanıcı girişi yapıldığında aşağıdaki menülere erişim sağlanır:
+   - ![Ekran görüntüsü 2025-01-05 123323](https://github.com/user-attachments/assets/ba04ad15-f4bf-4ffe-8494-77ea51fa0194)
+
+1. **Ürün İşlemleri**
+   - Ürün Listeleme
+2. **Kullanıcı İşlemleri**
+   - Şifre Değiştirme
+   - Profil Bilgisi Görüntüleme
 
 
 ## Güvenlik
