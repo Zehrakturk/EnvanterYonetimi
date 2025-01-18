@@ -121,4 +121,4 @@ Sistem aşağıdaki raporları otomatik olarak oluşturur:
 
 Zehra Aktürk - [@LinkedIn](https://www.linkedin.com/in/zehra-akt%C3%BCrk/) - zehra.akturk15@gmail.com
 
-Proje Linki: [https://github.com/kullanıcıadı/repo-adı](https://github.com/username/repo-name)
+Proje Linki: [https://github.com/Zehrakturk/EnvanterYonetimi](https://github.com/Zehrakturk/EnvanterYonetimi)
